@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Navigation from './Navigation/Navigation'
+import Footer from './Footer/Footer'
 import { Helmet } from "react-helmet";
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
                     Learn React
         </a>
             </header>
+            <Footer />
         </div>
     );
 }
