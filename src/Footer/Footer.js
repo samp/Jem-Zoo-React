@@ -5,7 +5,7 @@ import twitter from './twitter.svg';
 import instagram from './instagram.svg';
 import youtube from './youtube.svg';
 
-const navigation = (props) => {
+const footer = (props) => {
     return (
         <footer>
             <div class="footer-row">
@@ -31,4 +31,4 @@ const navigation = (props) => {
     )
 };
 
-export default navigation;
+export default footer;

@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+html {
+    min-width: 350px;
+    font-display: swap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html.wf-loading * {
+    opacity: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
 }
 
-.App-link {
-  color: #61dafb;
+h4 {
+    margin: 0.5rem 0;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+picture, img {
+    display: block;
+}
+
+.object-right {
+    object-position: right;
+}
+
+.object-left {
+    object-position: left;
+}
+
+main {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    width: 80%;
+    max-width: 1500px;
+    margin: 2rem auto 0;
+}
+
+main a, main a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        margin: 1rem auto;
+        width: 100%;
+    }
 }

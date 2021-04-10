@@ -1,8 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 import Navigation from './Navigation/Navigation'
+import Home from './Home/Home'
+import Animals from './Animals/Animals'
 import Footer from './Footer/Footer'
 import { Helmet } from "react-helmet";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+
 
 function App() {
     return (
@@ -10,6 +18,8 @@ function App() {
             <Helmet>
                 <meta charset="utf-8" />
                 <title>Jem Zoo</title>
+                <meta name="description" content="Jem Zoo is a family-friendly zoo in Wolverhampton. Tickets start from £10!" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 {/* Fonts */}
 
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -30,21 +40,19 @@ function App() {
                 <meta name="theme-color" content="#3e1052" />
             </Helmet>
 
-            <Navigation />
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-        </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-        </a>
-            </header>
+
+            <Router>
+                <Navigation />
+                <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route path="/animals">
+                        <Animals />
+                    </Route>
+
+                </Switch>
+            </Router>
             <Footer />
         </div>
     );
