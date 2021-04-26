@@ -1,0 +1,23 @@
+.hero {
+    position: relative;
+    z-index: 998;
+}
+
+.hero-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 7vw;
+    margin: 0 auto;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: #3E1052;
+    font-size: 3vw;
+    width: calc(80% - 2rem);
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-text {
+        font-size: 6vw;
+        bottom: 10vw;
+    }
+}

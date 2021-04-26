@@ -19,7 +19,7 @@
 .navigation h1 {
     font-family: "Chelsea Market", Arial, Helvetica, sans-serif;
     margin: 0;
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding: 1rem 0;
 }
 
@@ -38,6 +38,7 @@
     width: 66%;
     display: flex;
     align-items: center;
+    font-size: 1.4rem;
 }
 
 .navigation ul {
