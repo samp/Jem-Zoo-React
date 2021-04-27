@@ -12,3 +12,24 @@
     flex-flow: column;
     flex-grow: 1;
 }
+
+.button {
+    background-color: #276D3E;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+    align-self: center;
+    margin-top: auto;
+    padding: 1rem;
+}
+
+.button, .button:hover {
+    transition: all 0.2s linear;
+}
+
+.button:hover {
+    color: white;
+    background-color: #3E1052;
+}

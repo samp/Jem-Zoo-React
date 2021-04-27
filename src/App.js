@@ -2,13 +2,13 @@ import './App.css';
 import Navigation from './Navigation/Navigation'
 import Home from './Home/Home'
 import Animals from './Animals/Animals'
+import Tickets from './Tickets/Tickets'
 import Footer from './Footer/Footer'
 import { Helmet } from "react-helmet";
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
 } from "react-router-dom";
 
 
@@ -50,7 +50,9 @@ function App() {
                     <Route path="/animals">
                         <Animals />
                     </Route>
-
+                    <Route path="/tickets">
+                        <Tickets />
+                    </Route>
                 </Switch>
             </Router>
             <Footer />

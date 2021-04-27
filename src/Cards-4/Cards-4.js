@@ -1,8 +1,7 @@
 import React from 'react';
-import Card from '../Card/Card';
 import './Cards-4.css';
 
-const Cards_4 = (props) => {
+const Cards4 = (props) => {
     return (
         <div className="cards-4">
             {props.children}
@@ -10,4 +9,4 @@ const Cards_4 = (props) => {
     )
 };
 
-export default Cards_4;
+export default Cards4;

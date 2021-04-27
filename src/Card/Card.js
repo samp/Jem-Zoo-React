@@ -1,17 +1,21 @@
 import React from 'react';
 import './Card.css';
 
-const card = (props) => {
+const Card = (props) => {
     return (
         <div className="card">
-            <img src={props._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url}></img>
+            <img src={props.image}></img>
             <div className="card-text">
-                <h3>{props.title.rendered}</h3>
+                <h3>{props.title}</h3>
 
-                <div dangerouslySetInnerHTML={{ __html: props.content.rendered }} ></div>
+                <div dangerouslySetInnerHTML={{ __html: props.content }} ></div>
+
+                {props.link &&
+                    <a className="button" href={props.link}>{props.linkText}</a>
+                }
             </div>
         </div>
     )
 };
 
-export default card;
+export default Card;

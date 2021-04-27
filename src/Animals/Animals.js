@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../Card/Card';
-import Cards_4 from '../Cards-4/Cards-4';
+import Cards4 from '../Cards-4/Cards-4';
 
 const Animals = (props) => {
     const [animals, setAnimals] = useState([]);
@@ -18,11 +18,11 @@ const Animals = (props) => {
 
     return (
         <main>
-            <Cards_4>
+            <Cards4>
                 {animals.map((animal, i) => (
-                    <Card key={i} {...animal} />
+                    <Card key={i} {...animal} title={animal.title.rendered} content={animal.content.rendered} image={animal._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url}/>
                 ))}
-            </Cards_4>
+            </Cards4>
         </main>
     )
 };

@@ -3,8 +3,6 @@ import './Home.css';
 import Hero from '../Hero/Hero'
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
     Link
 } from "react-router-dom";
 

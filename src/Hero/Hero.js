@@ -1,13 +1,5 @@
 import React from 'react';
 import './Hero.css';
-//import heroimage from './hero.hpg';
-
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
 
 const hero = (props) => {
     return (

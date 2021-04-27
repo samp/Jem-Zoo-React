@@ -1,0 +1,76 @@
+.cards-2 {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.cards-2 .card {
+    width: calc(50% - 2rem);
+}
+
+.cards-2 .card-text {
+    padding: 1.5rem;
+    width: calc(50% - 3rem);
+}
+
+.cards-2 picture, .cards-2 img {
+    width: 50%;
+}
+
+@media only screen and (min-width: 1200px) {
+    .cards-2 .card:nth-child(4n+3), .cards-2 .card:nth-child(4n+4) {
+        flex-flow: row-reverse;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .cards-2 .card {
+        flex-flow: column;
+    }
+    .cards-2 picture, .cards-2 img {
+        width: 100%;
+        aspect-ratio: 3 / 2;
+    }
+    .cards-2 .card-text {
+        width: calc(100% - 3rem);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .cards-2 .card {
+        margin: 0 1rem 1rem;
+        width: calc(100% - 2rem);
+    }
+    .cards-2 .card-text {
+        width: calc(50% - 3rem);
+    }
+    .cards-2 .card:nth-child(even) {
+        flex-flow: row-reverse;
+    }
+    .cards-2 .card:nth-child(odd) {
+        flex-flow: row;
+    }
+    .cards-2 picture, .cards-2 img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cards-2 .card {
+        flex-flow: column;
+        width: calc(100% - 1.5rem);
+    }
+    .cards-2 .card-text {
+        width: calc(100% - 3rem);
+    }
+    .cards-2 .card:nth-child(even) {
+        flex-flow: column;
+    }
+    .cards-2 .card:nth-child(odd) {
+        flex-flow: column;
+    }
+    .cards-2 picture, .cards-2 img {
+        width: 100%;
+    }
+}
