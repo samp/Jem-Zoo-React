@@ -1,0 +1,32 @@
+.cards-4 {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.cards-4 .card {
+    flex-flow: column;
+    max-width: calc(25% - 2rem);
+}
+
+.card-text {
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .cards-4 .card {
+        margin-left: 1rem;
+        margin-right: 0;
+        max-width: calc(50% - 1.5rem);
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .cards-4 {
+        flex-flow: column;
+    }
+    .cards-4 .card {
+        min-width: calc(100% - 2rem);
+    }
+}
