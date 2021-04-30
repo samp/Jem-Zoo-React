@@ -21,10 +21,10 @@ const WhatWeDo = (props) => {
         <main>
             <Cards2>
                 <Card title="Our animals" content="<p>We have a team of highly skilled zookeepers that work around the clock to provide 
-                our animals with the highest quality care.</p>" image="images/tiger-square-fallback.jpg" link="#" linkText="Read more"/>
+                    our animals with the highest quality care.</p>" image="images/tiger-square-fallback.jpg" link="#" linkText="Read more"/>
                 <Card title="Conservation" content="<p>We are dedicated to providing a safe future for all animals. Our conservation 
-                focuses on wildlife rescue and rehabilitation in the UK, as well as funding nature reserves and other wild spaces.</p>"
-                image="images/puffin-square-fallback.jpg" link="#" linkText="Read more"/>
+                    focuses on wildlife rescue and rehabilitation in the UK, as well as funding nature reserves and other wild spaces.</p>"
+                    image="images/puffin-square-fallback.jpg" link="#" linkText="Read more"/>
             </Cards2>
             <Cards1>
                 {posts.map((post, i) => (

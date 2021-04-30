@@ -4,7 +4,7 @@ import './Card.css';
 const Card = (props) => {
     return (
         <div className="card">
-            <img src={props.image}></img>
+            <img src={props.image} alt={props.altText}></img>
             <div className="card-text">
                 <h3 dangerouslySetInnerHTML={{ __html: props.title }}></h3>
 
