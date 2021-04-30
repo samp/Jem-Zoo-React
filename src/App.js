@@ -3,6 +3,7 @@ import Navigation from './Navigation/Navigation'
 import Home from './Home/Home'
 import Animals from './Animals/Animals'
 import Tickets from './Tickets/Tickets'
+import ThingsToDo from './Things-To-Do/Things-To-Do'
 import WhatWeDo from './What-We-Do/What-We-Do'
 import Footer from './Footer/Footer'
 import { Helmet } from "react-helmet";
@@ -50,6 +51,9 @@ function App() {
                     </Route>
                     <Route path="/animals">
                         <Animals />
+                    </Route>
+                    <Route path="/things-to-do">
+                        <ThingsToDo />
                     </Route>
                     <Route path="/what-we-do">
                         <WhatWeDo />
