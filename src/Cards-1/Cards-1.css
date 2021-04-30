@@ -1,0 +1,33 @@
+.cards-1 .card {
+    width: calc(100% - 2rem);
+}
+
+.cards-1 .card-text {
+    padding: 2rem;
+    width: calc(50% - 4rem);
+}
+
+.cards-1 img {
+    width: 50%;
+}
+
+.cards-1 .card:nth-of-type(even) {
+    flex-flow: row-reverse;
+}
+
+@media only screen and (max-width: 900px) {
+    .cards-1 .card {
+        margin-bottom: 1rem;
+        flex-flow: column;
+    }
+    .cards-1 .card-text {
+        padding: 1rem;
+        width: calc(100% - 2rem);
+    }
+    .cards-1 img {
+        width: 100%;
+    }
+    .cards-1 .card:nth-of-type(even) {
+        flex-flow: column;
+    }
+}

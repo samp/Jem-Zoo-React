@@ -20,7 +20,7 @@ const Animals = (props) => {
         <main>
             <Cards4>
                 {animals.map((animal, i) => (
-                    <Card key={i} {...animal} title={animal.title.rendered} content={animal.content.rendered} image={animal._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url}/>
+                    <Card key={i} title={animal.title.rendered} content={animal.content.rendered} image={animal._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url}/>
                 ))}
             </Cards4>
         </main>

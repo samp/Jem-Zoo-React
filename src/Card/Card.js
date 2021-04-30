@@ -6,7 +6,7 @@ const Card = (props) => {
         <div className="card">
             <img src={props.image}></img>
             <div className="card-text">
-                <h3>{props.title}</h3>
+                <h3 dangerouslySetInnerHTML={{ __html: props.title }}></h3>
 
                 <div dangerouslySetInnerHTML={{ __html: props.content }} ></div>
 

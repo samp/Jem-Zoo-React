@@ -18,7 +18,7 @@ const navigation = (props) => {
                     <ul id="menu">
                         <li><Link to="/animals" style={{ backgroundImage: `url(${hippo})` }}>Animals</Link></li>
                         <li><a href="things-to-do.html" style={{ backgroundImage: `url(${map})` }}>Things to do</a></li>
-                        <li><a href="what-we-do.html" style={{ backgroundImage: `url(${hand})` }}>What we do</a></li>
+                        <li><Link to="/what-we-do" style={{ backgroundImage: `url(${hand})` }}>What we do</Link></li>
                         <li><Link to="/tickets" style={{ backgroundImage: `url(${ticket})` }}>Tickets</Link></li>
                     </ul>
                 </nav>
