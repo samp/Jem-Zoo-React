@@ -1,0 +1,314 @@
+.kids-body {
+    background-image: url("topography.svg");
+    background-size: 900px;
+}
+
+.kids body h2, .kids body h3 {
+    font-family: "Londrina Solid", cursive;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.kids .main {
+    margin: 1rem auto 0;
+    max-width: 2000px;
+}
+
+.kids .header .navbar {
+    font-family: "Londrina Solid", cursive;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+}
+
+#kids-hero {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    margin: 0 1rem 1rem;
+    justify-items: stretch;
+}
+
+#kids-hero a, #kids-hero a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#kids-hero .kids-hero-group {
+    grid-row: 1/span 2;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+#kids-hero .kids-hero-group:nth-of-type(even) {
+    flex-flow: column-reverse;
+}
+
+#kids-hero .hero-text {
+    text-align: right;
+    position: absolute;
+    left: 50%;
+    right: 0;
+    bottom: 2vw;
+    margin: 0;
+    font-family: "Londrina Solid", cursive;
+    color: white;
+    width: 40%;
+}
+
+#kids-hero .hero-text h2 {
+    font-size: 3vw;
+}
+
+@media only screen and (min-width: 2000px) {
+    #kids-hero .hero-text h2 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #kids-hero .hero-text {
+        bottom: 4vw;
+        width: 35%;
+        left: 55%;
+    }
+    #kids-hero .hero-text h2 {
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #kids-hero .hero-text h2 {
+        font-size: 6vw;
+    }
+}
+
+#kids-hero h3 {
+    font-size: 1.7vw;
+}
+
+#kids-hero .card-text {
+    height: calc(100% - 2rem);
+}
+
+#kids-hero p {
+    text-align: center;
+    font-size: 1.2vw;
+    display: block;
+    flex-basis: auto;
+    margin: 0.5rem 0;
+}
+
+#kids-hero img {
+    width: calc(100% - 2rem);
+    margin: 1rem;
+}
+
+#kids-hero .kids-hero-group:nth-of-type(2)>* {
+    background-color: #3ec2c0;
+}
+
+#kids-hero .kids-hero-group:nth-of-type(2)>* a {
+    color: black;
+}
+
+#kids-hero .kids-hero-group:nth-of-type(3)>* {
+    background-color: #3ec2c0;
+}
+
+#kids-hero .kids-hero-group:nth-of-type(3)>* a {
+    color: black;
+}
+
+#kids-hero .kids-hero-group:nth-of-type(4)>* {
+    background-color: #3ec2c0;
+}
+
+#kids-hero .kids-hero-group:nth-of-type(4)>* a {
+    color: black;
+}
+
+#kids-hero .kids-hero-card:nth-of-type(even) {
+    border-radius: 50%;
+}
+
+#kids-hero .kids-hero-card:nth-of-type(even) img {
+    border-radius: 50%;
+}
+
+#kids-hero .kids-hero-card {
+    aspect-ratio: 1/1;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    #kids-hero .kids-hero-card#kids-hero-main {
+        aspect-ratio: unset;
+    }
+}
+
+#kids-hero .grow-rotate {
+    /* From https://ianlunn.github.io/Hover/ */
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+#kids-hero .grow-rotate:hover, #kids-hero .grow-rotate:focus, #kids-hero .grow-rotate:active {
+    -webkit-transform: scale(1.1) rotate(4deg);
+    transform: scale(1.1) rotate(4deg);
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+#kids-hero .card-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#kids-hero #kids-hero-main {
+    z-index: 999;
+    transform: perspective(1px) translateZ(0);
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+    background-color: #00704A;
+    color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+    #kids-hero #kids-hero-main {
+        grid-column: 1/span 3;
+    }
+    #kids-hero #kids-hero-main img {
+        aspect-ratio: 3/2;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #kids-hero #kids-hero-main {
+        grid-column: 1/span 2;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    #kids-hero h3 {
+        font-size: 3rem;
+    }
+    #kids-hero p {
+        font-size: 2rem;
+    }
+}
+
+.kids .card {
+    border-radius: 25px;
+    font-size: 1.1rem;
+}
+
+.kids .card h3 {
+    font-size: 2.5rem;
+}
+
+.kids .card img {
+    margin: 1rem;
+}
+
+.kids .card img {
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #kids-hero .kids-hero-group {
+        grid-row: unset;
+        grid-column: span 2;
+        flex-flow: row;
+        gap: 2rem;
+    }
+    #kids-hero .kids-hero-group:nth-of-type(2) {
+        grid-column: unset;
+        grid-row: span 2;
+    }
+    #kids-hero .kids-hero-group:nth-of-type(4) {
+        flex-flow: row;
+    }
+    #kids-hero {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .kids .main .cards-2 img {
+        width: calc(100% - 2rem);
+        aspect-ratio: 3/2;
+    }
+    .kids .main .cards-2 .card-text {
+        width: calc(100% - 3rem);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #kids-hero {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    #kids-hero h3 {
+        font-size: 4vw;
+    }
+    #kids-hero p {
+        font-size: 2.2vw;
+    }
+    .kids .main .cards-2 img {
+        width: calc(50% - 1rem);
+    }
+    .kids .main .cards-2 .card-text {
+        width: calc(50% - 2rem);
+    }
+    #kids-hero .kids-hero-group {
+        flex-flow: column;
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    #kids-hero .kids-hero-group:nth-of-type(even) {
+        flex-flow: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #kids-hero h3 {
+        font-size: 5vw;
+    }
+    #kids-hero p {
+        font-size: 3vw;
+    }
+    #kids-hero img {
+        width: calc(100% - 1rem);
+        margin: 0.5rem;
+    }
+    .kids .main .cards-2 img {
+        width: calc(100% - 2rem);
+    }
+    .kids .main .cards-2 .card-text {
+        width: calc(100% - 3rem);
+    }
+    #kids-hero {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+    #kids-hero .kids-hero-group {
+        flex-flow: row;
+        grid-column: span 2;
+        grid-row: unset;
+    }
+    #kids-hero .kids-hero-group:nth-of-type(2) {
+        grid-column: span 2;
+        grid-row: unset;
+    }
+    #kids-hero .kids-hero-group:nth-of-type(even) {
+        flex-flow: row-reverse;
+    }
+}
