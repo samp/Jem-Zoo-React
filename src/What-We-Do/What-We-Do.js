@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Card from '../Card/Card';
 import Cards2 from '../Cards-2/Cards-2';
 import Cards1 from '../Cards-1/Cards-1';
+import Helmet from "react-helmet";
 
 const WhatWeDo = (props) => {
     const [posts, setPosts] = useState([]);
@@ -15,10 +16,13 @@ const WhatWeDo = (props) => {
                 console.log("Error getting file " + jresponse.status + ": " + jresponse.statusText);
             }
         });
-    });
+    }, []);
 
     return (
         <main>
+            <Helmet>
+                <title>Jem Zoo - What we do</title>
+            </Helmet>
             <Cards2>
                 <Card title="Our animals" content="<p>We have a team of highly skilled zookeepers that work around the clock to provide 
                     our animals with the highest quality care.</p>" image="images/tiger-square-fallback.jpg" link="#" linkText="Read more"/>
