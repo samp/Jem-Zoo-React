@@ -7,7 +7,7 @@ import Helmet from "react-helmet";
 const WhatWeDo = (props) => {
     const [eventposts, setEventPosts] = useState([]);
     useEffect(() => {
-        fetch("http://localhost/jemzoo/wp-json/wp/v2/posts?_embed&categories=3&tags=5").then(function (jresponse) {
+        fetch("http://localhost/jemzoo/wp-json/wp/v2/event?_embed").then(function (jresponse) {
             if (jresponse.ok) {
                 jresponse.json().then(function (json) {
                     setEventPosts(json);

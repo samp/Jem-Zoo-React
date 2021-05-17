@@ -86,7 +86,7 @@
 }
 
 #kids-hero h3 {
-    font-size: 1.7vw;
+    font-size: 1.6rem;
 }
 
 #kids-hero .card-text {
@@ -95,7 +95,6 @@
 
 #kids-hero p {
     text-align: center;
-    font-size: 1.2vw;
     display: block;
     flex-basis: auto;
     margin: 0.5rem 0;
@@ -141,9 +140,10 @@
 #kids-hero .kids-hero-card {
     aspect-ratio: 1/1;
     margin: 0;
+    width:100%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
     #kids-hero .kids-hero-card#kids-hero-main {
         aspect-ratio: unset;
     }
@@ -184,7 +184,7 @@
     color: white;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
     #kids-hero #kids-hero-main {
         grid-column: 1/span 3;
     }
@@ -218,14 +218,37 @@
 }
 
 .kids .card img {
+    /*width: calc(100% - 2rem);*/
     margin: 1rem;
 }
+
+@media only screen and (max-width: 1200px){
+    .kids .card img {
+        width: calc(100% - 2rem);
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .kids .card img {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .kids .card img {
+        width: calc(100% - 2rem);
+    }
+}
+
 
 .kids .card img {
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
+    #kids-hero h3 {
+        font-size: 2.6vw;
+    }
     #kids-hero .kids-hero-group {
         grid-row: unset;
         grid-column: span 2;
