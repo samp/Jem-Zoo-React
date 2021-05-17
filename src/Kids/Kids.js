@@ -25,6 +25,7 @@ const WhatWeDo = (props) => {
             <Helmet>
                 <title>Jem Zoo - Kid's Zone</title>
                 <body className="kids-body" />
+                <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400&amp;display=swap" rel="stylesheet"></link>
             </Helmet>
             <div id="kids-hero">
                 <div id="kids-hero-main" className="kids-hero-card card">
